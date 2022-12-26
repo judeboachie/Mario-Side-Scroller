@@ -1,0 +1,31 @@
+
+<style>
+	/*Browsers have default margins on some elements by default. This is to get rid of that so the canvas can take up the full width and height of the browser window*/
+	body {
+		margin: 0;
+		background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* The full viewheight of the browser window */ 
+	}
+
+	#background, #hills, #platform, #platformSmallTall, #spriteRunLeft, #spriteRunRight, #spriteStandLeft, #spriteStandRight {
+	display: none;
+}
+</style>
+<body>
+	<canvas></canvas>
+</body>
+
+	<!-- The simplest way to make sure images are fully loaded and available before javascript runs is to include them on the webpage -->
+	<img id="background" src="img/background.png">
+	<img id="hills" src="img/hills.png">
+	<img id="platform" src="img/platform.png">
+	<img id="platformSmallTall" src="img/platformSmallTall.png">
+	<img id="spriteRunLeft" src="img/spriteRunLeft.png">
+	<img id="spriteRunRight" src="img/spriteRunRight.png">
+	<img id="spriteStandLeft" src="img/spriteStandLeft.png">
+	<img id="spriteStandRight" src="img/spriteStandRight.png">
+
+<script src="index.js" type="module"></script>
